@@ -1,25 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
+import ContentRenderer from "./components/ContentRenderer";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="min-h-screen bg-gray-100 flex items-center justify-center p-4">
+      <ContentRenderer url="https://app-conteudodoc-cms-qa.azurewebsites.net/wp-json/api/elementor-content?post_id=29486" />
     </div>
   );
 }
-
-export default App;
